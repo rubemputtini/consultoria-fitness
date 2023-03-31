@@ -6,7 +6,7 @@ Este repositório contém o código fonte do meu site profissional, que foi cria
 
 O objetivo deste projeto é apresentar de forma clara e objetiva os benefícios da minha Consultoria Fitness Online que meus clientes podem obter ao treinar comigo. A experiência de um futuro aluno no meu site é muito importante, o que fez com que eu colocasse diversas funcionalidades como vantagens de fazer parte, passo a passo para começar, depoimentos de alunos satisfeitos e muito mais.
 
-Fiz questão de colocar um easteregg no código pra você que é #dev e quer a minha ajuda pra montar seus treinos! :D
+Fiz questão de colocar um EASTER EGG no código pra você que é #dev e quer a minha ajuda pra montar seus treinos! 😁
 
 ## Tecnologias Utilizadas
 
