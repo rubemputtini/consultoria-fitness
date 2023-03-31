@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.yellow-gradient-text {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #ffe9b3 0.89%,
+    #ffe3a0 17.23%,
+    #ffde8d 42.04%,
+    #ffd87a 55.12%,
+    #ffd367 71.54%,
+    #ffcd54 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.red-gradient-text {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #d81143 0.89%,
+    #dc2b58 17.23%,
+    #e1466d 42.04%,
+    #e56082 55.12%,
+    #e97b97 71.54%,
+    #ee95ab 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.green-gradient-text {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #97c7a7 0.89%,
+    #7eb891 17.23%,
+    #64aa7b 42.04%,
+    #4a9c65 55.12%,
+    #308e4f 71.54%,
+    #168039 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-yellow-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #ffe9b3 -43.27%,
+    #ffe3a0 -21.24%,
+    #ffde8d 12.19%,
+    #ffd87a 29.82%,
+    #ffd367 51.94%,
+    #ffcd54 90.29%
+  );
+}
+
+.bg-green-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #97d78e -43.27%,
+    #7cce71 -21.24%,
+    #62c455 12.19%,
+    #48ba39 29.82%,
+    #2eb01c 51.94%,
+    #14a600 90.29%
+  );
+}
+
+.bg-red-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #ee95ab -43.27%,
+    #e97b97 -21.24%,
+    #e56082 12.19%,
+    #e1466d 29.82%,
+    #dc2b58 51.94%,
+    #d81143 90.29%
+  );
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.red__gradient {
+  background: linear-gradient(90deg, #e56082 0%, #d81143 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
