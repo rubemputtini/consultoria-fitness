@@ -18,7 +18,7 @@ Fiz questão de colocar um EASTER EGG no código pra você que é #dev e quer a 
 
 ## Como acessar
 
-O site está disponível publicamente em www.rubemputtini.com.br. Basta acessar o link no seu navegador para visualizar o conteúdo do site.
+O site está disponível publicamente em https://www.rubemputtini.com.br. Basta acessar o link no seu navegador para visualizar o conteúdo do site.
 
 Caso encontre algum problema ao acessar o site, verifique sua conexão com a internet e tente novamente. Se o problema persistir, entre em contato comigo para que eu possa ajudar.
 
