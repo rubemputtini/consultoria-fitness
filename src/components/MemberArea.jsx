@@ -16,6 +16,7 @@ const MemberArea = () => (
       <img
         src={memberarea}
         className="xs:w-[350px] sm:w-[350px] md:w-[500px]"
+        alt="area-de-membros"
       />
     </div>
   </section>

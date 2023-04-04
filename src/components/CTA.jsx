@@ -5,13 +5,13 @@ import { salesLink } from "../constants";
 const CTA = () => (
   <section className="flex justify-center items-center font-poppins mb-6">
     <div className="mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div className="flex flex-col relative p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-yellow-50 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+      <div className="flex flex-col relative p-6 mx-auto max-w-lg text-center rounded-lg border shadow border-gray-600 xl:p-8 bg-gray-800 text-white">
         <div className="absolute z-[3] -right-1/2 top-0 w-[80%] h-[50%] rounded-full white__gradient" />
         <div className="absolute z-[0] -left-1/2 bottom-0 w-[80%] h-[50%] rounded-full red__gradient" />
         <h3 className="mb-4 text-2xl font-semibold">Tudo isso por:</h3>
         <div className="flex justify-center items-baseline mt-2">
           <span className="mb-5 mr-2 text-5xl font-extrabold">R$ 119,90</span>
-          <span className="text-gray-500 dark:text-gray-400">/mês</span>
+          <span className="text-gray-400">/mês</span>
         </div>
         <p className="font-bold sm:text-lg yellow-gradient-text mb-7">
           ASSINATURA SEM FIDELIDADE
@@ -20,7 +20,7 @@ const CTA = () => (
         <ul role="list" className="mt-8 mb-8 space-y-4 text-left">
           <li key="planejamento" className="flex items-center space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              className="flex-shrink-0 w-5 h-5 text-green-400"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const CTA = () => (
           </li>
           <li key="area" className="flex items-center space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              className="flex-shrink-0 w-5 h-5 text-green-400"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const CTA = () => (
           </li>
           <li key="atendimento" className="flex items-center space-x-3">
             <svg
-              className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+              className="flex-shrink-0 w-5 h-5 text-green-400"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
