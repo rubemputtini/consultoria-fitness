@@ -57,7 +57,7 @@ const FAQ = ({ questions }) => {
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
+                            d="M15.834 7.5L10.0007 13.3333L4.16732 7.5"
                             stroke="black"
                             strokeWidth="2"
                             strokeLinecap="round"
