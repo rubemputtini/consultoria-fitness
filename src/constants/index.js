@@ -20,8 +20,8 @@ import {
 
 export const salesLink = [
   {
-    id: "hotmart",
-    link: "https://pay.hotmart.com/W40721125U?checkoutMode=10",
+    id: "mfit",
+    link: "https://pages.mfitpersonal.com.br/p/x61?checkout=true",
   },
 ];
 
@@ -29,7 +29,7 @@ export const navLinks = [
   {
     id: "area-de-membros",
     title: "Área de Membros",
-    link: "https://rubemputtini.club.hotmart.com/",
+    link: "https://www.mfitpersonal.com.br/download",
   },
   {
     id: "comece-agora",
@@ -210,13 +210,7 @@ export const questionsData = [
   },
   {
     title: "Como solicitar o cancelamento?",
-    text: `Você pode fazer isso em até 30 dias no período de TESTE. Ou então a qualquer momento que não desejar mais continuar com esse projeto. Basta seguir essas instruções que a Hotmart preparou: <span className="text-blue-400 font-bold">
-      <a
-        href="https://help.hotmart.com/pt-BR/article/como-cancelar-uma-assinatura/115002183968"
-        target="_blank">
-        CLIQUE AQUI.
-      </a>
-    </span>`,
+    text: `Você pode fazer isso em até 30 dias no período de TESTE. Ou então a qualquer momento que não desejar mais continuar com esse projeto. Basta seguir essas instruções de cancelamento dentro da sua conta no app da MFIT`,
     isOpen: false,
   },
 ];
