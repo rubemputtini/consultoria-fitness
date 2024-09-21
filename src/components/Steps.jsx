@@ -23,8 +23,7 @@ const Steps = () => (
               <h5 className="text-lg font-semibold mb-4 ">ASSINATURA</h5>
               <hr className="border-t border-red-300 h-1 w-20 mx-auto mb-3" />
               <p>
-                O pagamento da consultoria é através de uma recorrência mensal.
-                A cobrança será a cada 30 dias, junto a renovação do seu treino.
+                O pagamento da consultoria é mensal e recorrente. A cada 30 dias, sua assinatura será renovada, garantindo o ajuste constante do seu treino.
               </p>
             </div>
           </div>
@@ -40,12 +39,10 @@ const Steps = () => (
               />
             </div>
             <div className="p-6">
-              <h5 className="text-lg font-semibold mb-4">ÁREA DE MEMBROS</h5>
+              <h5 className="text-lg font-semibold mb-4">APLICATIVO</h5>
               <hr className="border-t border-red-300 h-1 w-20 mx-auto mb-3" />
               <p>
-                Após a confirmação do pagamento você receberá um email liberando
-                o acesso a nossa ÁREA DE MEMBROS, utilize os dados fornecidos
-                para entrar na plataforma.
+                Após o pagamento, você receberá acesso imediato ao nosso APP DE TREINO. Basta seguir as instruções no email e começar agora, direto do seu celular.
               </p>
             </div>
           </div>
@@ -64,9 +61,7 @@ const Steps = () => (
               <h5 className="text-lg font-semibold mb-4">QUESTIONÁRIO</h5>
               <hr className="border-t border-red-300 h-1 w-20 mx-auto mb-3" />
               <p>
-                Assista ao vídeo de boas-vindas no primeiro módulo e preencha o
-                questionário cuidadosamente para que seja feita a melhor
-                prescrição do treino pro seu objetivo.
+                Assista ao vídeo de boas-vindas e preencha o questionário com atenção. Com suas respostas detalhadas, criarei um treino personalizado que se ajusta perfeitamente às suas metas e rotina.
               </p>
             </div>
           </div>
@@ -85,9 +80,7 @@ const Steps = () => (
               <h5 className="text-lg font-semibold mb-4">TREINO EM MÃOS</h5>
               <hr className="border-t border-red-300 h-1 w-20 mx-auto mb-3" />
               <p>
-                O treino será entregue em até 48h após o envio do questionário
-                devidamente preenchido. Com o planejamento em mãos, está na hora
-                de começar!
+                Seu treino será entregue em até 48 horas após o envio do questionário completo. Com tudo pronto, é hora de começar sua jornada!
               </p>
             </div>
           </div>

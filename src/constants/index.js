@@ -139,7 +139,7 @@ export const stats = [
   {
     id: "stats-1",
     title: "Alunos impactados",
-    value: "+149",
+    value: "+164",
   },
   {
     id: "stats-2",
@@ -195,7 +195,7 @@ export const questionsData = [
   {
     title:
       "Como vou saber se estou executando os exercícios da maneira correta?",
-    text: "Juntamente com seu treino, você terá acesso a Área de Membros. Todos os exercícios utilizados estão cadastrados na plataforma para que você visualize a execução correta. Além disso, você terá acesso ao meu WhatsApp para que eu possa dar todo o suporte necessário durante esse projeto!",
+    text: "Com o nosso aplicativo, você terá acesso a vídeos de todos os exercícios, garantindo que visualize a execução correta. Além disso, você poderá me contatar pelo WhatsApp para receber todo o suporte necessário durante esse projeto!",
     isOpen: false,
   },
   {

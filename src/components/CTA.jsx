@@ -10,7 +10,7 @@ const CTA = () => (
         <div className="absolute z-[0] -left-1/2 bottom-0 w-[80%] h-[50%] rounded-full red__gradient" />
         <h3 className="mb-4 text-2xl font-semibold">Tudo isso por:</h3>
         <div className="flex justify-center items-baseline mt-2">
-          <span className="mb-5 mr-2 text-5xl font-extrabold">R$ 119,90</span>
+          <span className="mb-5 mr-2 text-5xl font-extrabold">R$ 129,90</span>
           <span className="text-gray-400">/mês</span>
         </div>
         <p className="font-bold sm:text-lg yellow-gradient-text mb-7">
@@ -49,7 +49,7 @@ const CTA = () => (
               ></path>
             </svg>
             <span>
-              <b>ÁREA DE MEMBROS</b> com exercícios em vídeo
+              <b>APLICATIVO</b> para acompanhar seu treino
             </span>
           </li>
           <li key="atendimento" className="flex items-center space-x-3">
