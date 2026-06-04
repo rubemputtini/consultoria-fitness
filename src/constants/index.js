@@ -8,66 +8,9 @@ import {
   larissa,
   arthur,
   clara,
-  facebook,
   instagram,
   youtube,
-  telegram,
-  direcionamento,
-  exemplar,
-  metodo,
-  tempo,
 } from "../assets";
-
-export const salesLink = [
-  {
-    id: "mfit",
-    link: "https://pages.mfitpersonal.com.br/p/x61?checkout=true",
-  },
-];
-
-export const navLinks = [
-  {
-    id: "area-de-membros",
-    title: "Área de Membros",
-    link: "https://www.mfitpersonal.com.br/download",
-  },
-  {
-    id: "comece-agora",
-    title: "COMECE AGORA!",
-    link: salesLink[0].link,
-  },
-];
-
-export const features = [
-  {
-    id: "feature-1",
-    icon: direcionamento,
-    title: "DIRECIONAMENTO ESTRATÉGICO",
-    content:
-      "O planejamento de treino é elaborado de acordo com seus objetivos pessoais, respeitando suas limitações e entregando o caminho exato para você seguir",
-  },
-  {
-    id: "feature-2",
-    icon: exemplar,
-    title: "FREQUÊNCIA EXEMPLAR",
-    content:
-      "A base da consultoria é transformar o exercício físico em um hábito diário na sua rotina, você será um exemplo para todos ao seu redor",
-  },
-  {
-    id: "feature-3",
-    icon: metodo,
-    title: "MÉTODO INTELIGENTE",
-    content:
-      "São mais de 13 métodos de treinos diferentes para fortalecer sua musculatura e garantir uma evolução constante todos os meses",
-  },
-  {
-    id: "feature-4",
-    icon: tempo,
-    title: "ECONOMIA DE TEMPO",
-    content:
-      "Através da minha metodologia de treinos curtos você conquista em minutos o que muitos não conseguem em horas na academia",
-  },
-];
 
 export const feedback = [
   {
@@ -135,83 +78,49 @@ export const feedback = [
   },
 ];
 
-export const stats = [
-  {
-    id: "stats-1",
-    title: "Alunos impactados",
-    value: "+164",
-  },
-  {
-    id: "stats-2",
-    title: "Métodos de treino",
-    value: "+13",
-  },
-  {
-    id: "stats-3",
-    title: "Aulas explicativas",
-    value: "+16",
-  },
-  {
-    id: "stats-4",
-    title: "Exercícios gravados",
-    value: "+110",
-  },
-];
-
 export const socialMedia = [
   {
     id: "social-media-1",
+    name: "Instagram",
     icon: instagram,
     link: "https://www.instagram.com/rubemputtini/",
   },
   {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/rubemputtini",
-  },
-  {
     id: "social-media-3",
+    name: "YouTube",
     icon: youtube,
     link: "https://www.youtube.com/channel/UCtd2KtLMi5YySEqpvWYl9ag?sub_confirmation=1",
-  },
-  {
-    id: "social-media-4",
-    icon: telegram,
-    link: "https://t.me/rubemputtini",
   },
 ];
 
 export const questionsData = [
   {
-    title: "Eu não tenho uma academia disponível, posso assinar a consultoria?",
-    text: "SIM! Os treinos podem ser realizados em academias, condomínios, parques ou até mesmo em CASA! No entanto, pensando na sua SAÚDE e SEGURANÇA, recomendo que você procure uma academia para realizar os exercícios prescritos. Dessa forma você poderá extrair o máximo do treino e sem correr riscos desnecessários.",
-    isOpen: false,
+    title: "Por que contratar uma consultoria se posso montar meu treino com IA?",
+    text: "Porque montar um treino é a parte fácil — e a IA faz isso bem. O que ela não consegue é perceber que você está compensando com o músculo errado, identificar por que você travou no platô ou entender que aquele exercício específico não funciona para o seu corpo. O acompanhamento não é sobre o plano em si. É sobre os ajustes que fazem o plano funcionar para você.",
   },
   {
-    title: "Estou sedentário, esse planejamento é pra mim?",
-    text: "SEM DÚVIDAS! O programa será totalmente personalizado e voltado para seu objetivo. Através do questionário será possível entender seu perfil e entregar a melhor estratégia. Tudo isso de maneira SEGURA, fique tranquilo!",
-    isOpen: false,
+    title: "Posso treinar em casa?",
+    text: "Sim, os treinos podem ser feitos em academia, condomínio, parque ou em casa. Se você tiver acesso a uma academia, vai conseguir extrair mais do plano — a variedade de equipamentos permite trabalhar com mais precisão. Se não tiver, a gente adapta.",
   },
   {
-    title:
-      "Como vou saber se estou executando os exercícios da maneira correta?",
-    text: "Com o nosso aplicativo, você terá acesso a vídeos de todos os exercícios, garantindo que visualize a execução correta. Além disso, você poderá me contatar pelo WhatsApp para receber todo o suporte necessário durante esse projeto!",
-    isOpen: false,
+    title: "Nunca treinei antes. A consultoria funciona pra mim?",
+    text: "Funciona. O questionário inicial serve justamente para eu entender onde você está — sem pressupor nada. Você recebe um plano de acordo com o seu nível atual, não com o nível que eu gostaria que você tivesse.",
   },
   {
-    title: " Qual a duração dos treinos?",
-    text: "Os treinos serão renovados a cada 5 semanas e a duração média depende do seu objetivo, o mais comum é durar entre 25 e 45 minutos.",
-    isOpen: false,
+    title: "Como sei se estou executando os exercícios certo?",
+    text: "Pelo aplicativo você tem acesso aos vídeos de todos os exercícios, então dá para ver a execução antes de fazer. E se tiver dúvida sobre algo específico do seu movimento, é só me chamar no WhatsApp — estou aqui para isso.",
   },
   {
-    title: "Em quanto tempo os resultados começam a aparecer?",
-    text: "Depende do seu comprometimento! É uma via de mão dupla, eu vou mostrar o caminho, mas quem irá percorrer é você. Os resultados costumam aparecer nas duas primeiras semanas de consultoria, mas isso também depende do seu empenho, objetivo, nível de atividade física, alimentação… Não espere resultados rápidos e fáceis, afinal, “tudo que vem fácil, vai fácil”. É preciso ter determinação e frequência.",
-    isOpen: false,
+    title: "Quanto tempo duram os treinos?",
+    text: "A duração média fica entre 25 e 45 minutos, dependendo do seu objetivo e nível. Os treinos são renovados a cada 5 semanas.",
   },
   {
-    title: "Como solicitar o cancelamento?",
-    text: `Você pode fazer isso em até 30 dias no período de TESTE. Ou então a qualquer momento que não desejar mais continuar com esse projeto. Basta seguir essas instruções de cancelamento dentro da sua conta no app da MFIT`,
-    isOpen: false,
+    title: "Quando começo a ver resultado?",
+    text: "Depende do seu comprometimento — é uma via de mão dupla. Eu monto o caminho e faço os ajustes, mas quem precisa percorrê-lo é você. Muitos alunos notam diferença nas primeiras duas semanas, mas isso varia conforme o objetivo, a frequência, a alimentação e o histórico de cada um.",
+  },
+  {
+    title: "Como cancelo a assinatura?",
+    text: "Nos primeiros 30 dias você pode cancelar e receber o reembolso integral. Depois disso, basta seguir as instruções de cancelamento dentro da sua conta no app da MFIT. Sem burocracia.",
   },
 ];
 

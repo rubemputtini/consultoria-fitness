@@ -5,10 +5,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        primary: "#080B14",
+        surface: "#0F1523",
+        "surface-2": "#141C2E",
+        border: "#1E2535",
+        amber: "#D4A843",
+        action: "#D4A843",
+        muted: "#8892A4",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

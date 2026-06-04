@@ -1,58 +1,81 @@
-import { useState } from "react";
-import { close, logo, menu } from "../assets";
-import { navLinks } from "../constants";
+import { useState } from 'react';
+import { menu, close } from '../assets';
+import useCurrency from '../hooks/useCurrency';
+
+const MEMBER_LINK = 'https://www.mfitpersonal.com.br/download';
+
+const Logo = () => (
+  <div className="leading-tight">
+    <div className="font-black text-base tracking-tight text-white uppercase">
+      Rubem <span className="text-amber">Puttini</span>
+    </div>
+    <div className="text-xs font-medium tracking-widest text-muted uppercase">
+      Consultoria Fitness Online
+    </div>
+  </div>
+);
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const { ctaLink, loading } = useCurrency();
+  const href = loading ? '#' : ctaLink;
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="rubem_puttini" className="w-[124px] h-[32px]" />
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-border font-poppins">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <Logo />
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mr-10"
-              } text-white`}
+        <div className="hidden md:flex items-center gap-8">
+          <a
+            href={MEMBER_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="text-muted hover:text-white transition-colors text-sm font-medium"
           >
-            <a href={nav.link}>{nav.title}</a>
-          </li>
-        ))}
-      </ul>
-
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <div className="relative">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain z-50"
-            onClick={() => setToggle((prev) => !prev)}
-          />
-          <div
-            className={`${toggle ? "flex" : "hidden"
-              } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
+            Área de Membros
+          </a>
+          <a
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="action-btn text-white font-bold text-sm px-6 py-3 rounded-full"
           >
-            <ul className="list-none flex flex-col justify-end items-center flex-1">
-              {navLinks.map((nav, index) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mb-4"
-                    } text-white`}
-                >
-                  <a href={nav.link}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {toggle && (
-            <div
-              className="fixed inset-0 bg-black opacity-25 z-40"
-              onClick={() => setToggle(false)}
-            />
-          )}
+            Começar agora
+          </a>
         </div>
+
+        <button
+          className="md:hidden text-white p-1"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={isOpen}
+        >
+          <img src={isOpen ? close : menu} alt="" className="w-6 h-6" />
+        </button>
       </div>
+
+      {isOpen && (
+        <div className="md:hidden sidebar bg-surface border-t border-border px-6 py-6 flex flex-col gap-4">
+          <a
+            href={MEMBER_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="text-muted text-base font-medium py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            Área de Membros
+          </a>
+          <a
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="action-btn text-white font-bold text-base px-6 py-4 rounded-full text-center"
+            onClick={() => setIsOpen(false)}
+          >
+            Começar agora
+          </a>
+        </div>
+      )}
     </nav>
   );
 };

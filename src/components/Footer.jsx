@@ -1,60 +1,61 @@
-import styles from "../style";
-import { logo } from "../assets";
-import { socialMedia } from "../constants";
+import { socialMedia } from '../constants';
+
+const Logo = () => (
+  <div className="leading-tight">
+    <div className="font-black text-xl tracking-tight text-white uppercase">
+      Rubem <span className="text-amber">Puttini</span>
+    </div>
+    <div className="text-xs font-medium tracking-widest text-muted uppercase mt-0.5">
+      Consultoria Fitness Online
+    </div>
+  </div>
+);
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
   return (
-    <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
-      <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
-        <div className="flex-1 flex flex-col md:flex-row w-full md:w-auto items-center">
-          <img
-            src={logo}
-            alt="rubem_puttini"
-            className="w-[266px] h-[72px] object-contain xs:mb-7"
-          />
-          <p className={`${styles.text} ml-6`}>
-            <b>AVISO:</b> Para garantir que as estratégias da "Consultoria Fitness
-            Online com Rubem Puttini" tragam resultados significativos durante os
-            treinos, é necessário aplicar todos os ensinamentos durante a
-            consultoria conforme o recomendado. Os resultados podem variar e
-            dependem unicamente da dedicação de cada aluno em colocar em prática
-            as técnicas apresentadas.
-            <br />
-            <br />
-            <b>ATENÇÃO:</b> Este produto não substitui o parecer médico
-            profissional. Sempre consulte um médico para tratar de assuntos
-            relativos à saúde.
+    <footer className="font-poppins border-t border-border">
+      <div className="max-w-7xl mx-auto px-5">
+
+        <div className="py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <div className="flex flex-col gap-3">
+            <Logo />
+            <p className="text-muted text-sm">
+              Acompanhamento individual de treino online.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-6">
+            {socialMedia.map(({ id, name, icon, link }) => (
+              <a
+                key={id}
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={name}
+                className="opacity-70 hover:opacity-100 transition-opacity"
+              >
+                <img src={icon} alt="" className="w-5 h-5 object-contain" />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t border-border py-8 flex flex-col gap-4">
+          <p className="text-muted text-sm leading-relaxed max-w-2xl">
+            Os resultados variam de pessoa para pessoa e dependem do comprometimento de cada aluno.
+            Este serviço não substitui orientação médica — consulte um profissional de saúde antes
+            de iniciar qualquer programa de exercícios.
+          </p>
+          <p className="text-muted/70 text-xs">
+            © {year} Rubem Puttini. Todos os direitos reservados.
           </p>
         </div>
+
       </div>
-      <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-        <div className="flex flex-col items-center md:items-start md:flex-row">
-          <p className="font-poppins font-normal text-center md:text-left text-[18px] leading-[27px] text-white">
-            Rubem Puttini © {currentYear}.
-          </p>
-          <p className="font-poppins font-normal text-center md:text-left text-[18px] leading-[27px] text-white order-last md:order-none">
-            &nbsp;Todos os direitos reservados
-          </p>
-        </div>
-        <div className="flex flex-row md:mt-0 mt-6">
-          {socialMedia.map((social) => (
-            <a href={social.link} target="_blank" key={social.id}>
-              <img
-                src={social.icon}
-                alt={social.id}
-                className={`w-[21px] h-[21px] object-contain cursor-pointer ${social.id !== socialMedia[socialMedia.length - 1].id
-                  ? "mr-6"
-                  : "mr-0"
-                  }`}
-              />
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
+    </footer>
   );
-}
+};
 
 export default Footer;

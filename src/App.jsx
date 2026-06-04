@@ -1,48 +1,32 @@
-import styles from "./style";
-import {
-  Navbar,
-  Hero,
-  Stats,
-  Benefits,
-  Steps,
-  MemberArea,
-  Testimonials,
-  Guarantee,
-  CTA,
-  Footer,
-  Author,
-  FAQ,
-} from "./components";
-import { questionsData } from "./constants";
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Problem from './components/Problem';
+import Differentiator from './components/Differentiator';
+import FeaturedTestimonials from './components/FeaturedTestimonials';
+import HowItWorks from './components/HowItWorks';
+import Deliverables from './components/Deliverables';
+import Author from './components/Author';
+import Testimonials from './components/Testimonials';
+import Pricing from './components/Pricing';
+import FAQ from './components/FAQ';
+import FinalCTA from './components/FinalCTA';
+import Footer from './components/Footer';
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
-      </div>
-    </div>
-
-    <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
-    </div>
-
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Benefits />
-        <Steps />
-        <CTA />
-        <MemberArea />
-        <Guarantee />
-        <Author />
-        <Testimonials />
-        <FAQ questions={questionsData} />
-        <Footer />
-      </div>
-    </div>
+  <div className="bg-primary font-poppins overflow-hidden">
+    <Navbar />
+    <Hero />
+    <Problem />
+    <Differentiator />
+    <FeaturedTestimonials />
+    <HowItWorks />
+    <Deliverables />
+    <Author />
+    <Testimonials />
+    <Pricing />
+    <FAQ />
+    <FinalCTA />
+    <Footer />
   </div>
 );
 
