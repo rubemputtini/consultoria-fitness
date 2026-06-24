@@ -5,5 +5,6 @@ export default function handler(req, res) {
     'BR';
 
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Cache-Control', 'no-store');
   res.status(200).json({ country });
 }
