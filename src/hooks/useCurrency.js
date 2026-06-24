@@ -4,7 +4,7 @@ const useCurrency = () => {
   const [currency, setCurrency] = useState('BRL');
 
   useEffect(() => {
-    fetch('https://ipinfo.io/json')
+    fetch('/api/geo')
       .then((res) => res.json())
       .then((data) => {
         if (data.country !== 'BR') setCurrency('EUR');
