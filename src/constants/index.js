@@ -123,5 +123,3 @@ export const questionsData = [
     text: "Nos primeiros 30 dias você pode cancelar e receber o reembolso integral. Depois disso, basta seguir as instruções de cancelamento dentro da sua conta no app da MFIT. Sem burocracia.",
   },
 ];
-
-export default questionsData;
