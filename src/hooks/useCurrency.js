@@ -17,7 +17,7 @@ const useCurrency = () => {
   return {
     loading: false,
     isBRL,
-    price: isBRL ? 'R$ 149,90' : '€26',
+    price: isBRL ? 'R$ 149,90' : '€28',
     period: '/mês',
     ctaLink: isBRL
       ? 'https://pages.mfitpersonal.com.br/p/x61?checkout=true'
