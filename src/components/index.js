@@ -3,7 +3,6 @@ import Steps from "./Steps";
 import MemberArea from "./MemberArea";
 import Benefits from "./Benefits";
 import Guarantee from "./Guarantee";
-import CTA from "./CTA";
 import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
@@ -17,7 +16,6 @@ export {
   MemberArea,
   Benefits,
   Guarantee,
-  CTA,
   Stats,
   Footer,
   Testimonials,
